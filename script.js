@@ -16,9 +16,9 @@ function init() {
   junban = [...Array(37)].map((_, i) => i + 1);
   junban = arrayShuffle(junban);
 }
-window.onload = function(){
-  init() //ページロード時にリストを初期化
-}
+//window.onload = function(){
+//  init() //ページロード時にリストを初期化
+//}
 function generate(){
   if(junban.length == 0){
     init()
