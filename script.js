@@ -13,7 +13,14 @@ function arrayShuffle(array) {
   return array;
 }
 function init() {
-  junban = [...Array(37)].map((_, i) => i + 1);
+  junban = [];
+  for(let i=1;i<37;i++){
+    if(i.length == 1){
+      junban.push("0" + i);
+    } else {
+      junban.push(i);
+    }
+  }
   junban = arrayShuffle(junban);
   let li = document.getElementById("list");
   li.innerHTML = "";
