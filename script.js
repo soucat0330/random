@@ -27,11 +27,12 @@ function generate(){
   }
   let num = junban.shift();
   let el = document.getElementById("number");
+  let li = document.getElementById("list");
   if(num.length == 1){
     el.innerHTML = "0" + num;
+    li.innerHTML = li.innerHTML + "0" + num + "&#13;";
   } else {
     el.innerHTML = num;
+    li.innerHTML = li.innerHTML + num + "&#13;";
   }
-  let li = document.getElementById("list");
-  li.innerHTML = li.innerHTML + num + "&#13;";
 }
