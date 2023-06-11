@@ -16,7 +16,7 @@ function init() {
   junban = [];
   for(let i=1;i<37;i++){
     if(i.length == 1){
-      junban.push("0" + i);
+      junban.push("0" + string(i));
     } else {
       junban.push(i);
     }
