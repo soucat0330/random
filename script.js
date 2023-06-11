@@ -29,5 +29,5 @@ function generate(){
   let el = document.getElementById("number");
   let li = document.getElementById("list");
   el.innerHTML = ('00' + num).slice(-2);
-  li.innerHTML = li.innerHTML + ('00' + num).slice(-2); + "\n";
+  li.innerHTML = li.innerHTML + ('00' + num).slice(-2) + "\n";
 }
