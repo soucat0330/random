@@ -23,7 +23,7 @@ function init() {
   }
   junban = arrayShuffle(junban);
   let li = document.getElementById("list");
-  li.innerHTML = "";
+  li.innerHTML = junban;
 }
 window.onload = function(){
   init() //ページロード時にリストを初期化
