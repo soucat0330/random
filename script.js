@@ -28,11 +28,6 @@ function generate(){
   let num = junban.shift();
   let el = document.getElementById("number");
   let li = document.getElementById("list");
-  if(num.length == 1){
-    el.innerHTML = ('00' + num).slice(-2);
-    li.innerHTML = li.innerHTML + ('00' + num).slice(-2); + "&#13;";
-  } else {
-    el.innerHTML = num;
-    li.innerHTML = li.innerHTML + num + "&#13;";
-  }
+  el.innerHTML = ('00' + num).slice(-2);
+  li.innerHTML = li.innerHTML + ('00' + num).slice(-2); + "&#13;";
 }
