@@ -13,14 +13,7 @@ function arrayShuffle(array) {
   return array;
 }
 function init() {
-  junban = [];
-  for(let i=1;i<37;i++){
-    if(i.length == 1){
-      junban.push("0" + string(i));
-    } else {
-      junban.push(i);
-    }
-  }
+  junban = [...Array(5)].map((_, i) => i + 1)
   junban = arrayShuffle(junban);
   let li = document.getElementById("list");
   li.innerHTML = junban;
@@ -34,7 +27,11 @@ function generate(){
   }
   let num = junban.shift();
   let el = document.getElementById("number");
-  el.innerHTML = num
+  if(num.length == 1){
+    el.innerHTML = "0" + num;
+  } else {
+    el.innerHTML = num;
+  }
   let li = document.getElementById("list");
   li.innerHTML = li.innerHTML + num + "&#13;";
 }
