@@ -23,7 +23,7 @@ function init() {
 window.onload = function(){
   init(); //ページロード時にリストを初期化
   let maxnum = document.getElementById("max");
-  for(i=0;i<37;i++){
+  for( let i=0;i<37;i++){
     createcheck(i+1);
   }
   maxnum.addEventListener("input", function() {
@@ -86,9 +86,9 @@ function setstop(){
     set.style.display = "none";
     init() //いったん初期化
     let sakujo;
-    for ( i = 0; i < maxnum.value; i++) {
+    for ( let i = 0; i < maxnum.value; i++) {
       if ( checks[i].checked === true ) {
-        sakujo = junban.filter(item => item.match(i));
+        sakujo = junban.filter(item => item.toString().match(i));
       }
     }
   }
