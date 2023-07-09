@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
  <head>
- <meta charset="utf-8">
- <title>乱数</title>
-  <script type="text/javascript" src="script.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
+	 <meta charset="utf-8">
+	 <title>乱数</title>
+	 <script type="text/javascript" src="script.js"></script>
+	 <link rel="stylesheet" type="text/css" href="style.css">
  </head>
  <body>
-  <nav>
-   <a href="#" id="set">設定</a>
+  <nav id="menu">
+   <ul>
+		 <li><a href="javascript:set()" class="koumoku">設定</a></li>
+		 <li><a href="javascript:reset()" class="koumoku">リセット</a></li>
+   </ul>
   </nav>
-  <div id="display">
-   <a href="javascript:generate()" class="btn">乱数生成</a>
-   <p id="number">00</p>
-   <p id="rireki">履歴</p>
-   <textarea readonly id="list"></textarea>
-  </div>
+	 <div id="display">
+		<a href="javascript:generate()" class="btn">乱数生成</a>
+		<p id="number">00</p>
+		<p id="rireki">履歴</p>
+		<textarea readonly id="list"></textarea>
+	 </div>
+	 <div id="set">
+		 <p id="maxdis">最大値:37</p>
+		 <input type="range" id="max" min="1" max="99" step="1" value="37" style="width: 90%;"><br>
+		 <p>除外する数字選んでください</p>
+		 <div id="nonum"></div>
+		 <a href="javascript:setstop()" id="stop">設定する</a>
+	 </div>
  </body>
 </html>
