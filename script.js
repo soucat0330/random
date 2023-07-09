@@ -14,6 +14,7 @@ function arrayShuffle(array) {
 function init() {
   let maxnum = document.getElementById("max"); //スライダーを取得
   junban = [...Array(maxnum.value)].map((_, i) => i + 1);
+  console.log(junban);
   junban = arrayShuffle(junban);
   let li = document.getElementById("list");
   li.innerHTML = "";
