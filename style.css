@@ -5,7 +5,7 @@
 .btn,
 a.btn {
   color: #fff;
-  background-color: #eb6100;
+  background: #eb6100;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.5;
@@ -25,7 +25,7 @@ a.btn {
   letter-spacing: 0.1em;
   border-radius: 0.5rem;
 }
-#display {
+#display{
   text-align: center;
   font-size:200%;
   margin-top:30px;
@@ -39,19 +39,52 @@ a.btn {
   overflow: scroll;
 }
 nav {
-  width: 100vw;
   height: 70px;
   background-color: dimgray;
-  padding-top: 20px;
+  padding-top: 5px;
   box-sizing: border-box;
 }
-#set {
+
+#rireki {
+  margin-top:-115px;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+}
+.koumoku {
   display: block;
   text-decoration: none;
   color: white;
-  margin-left: 35px;
-  font-size:20px;
+  margin-right: 35px;
 }
-#rireki {
-  margin-top:-115px;
+#set {
+  display:none;
+  text-align: center;
+  font-size:150%;
+  margin-top:30px;
+}
+#stop {
+  color: #fff;
+  background: #00bfff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  border-radius: 0.5rem;
 }
